@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sistema de Visitas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .sair {
+            color: white;
+            text-decoration: none;
+            background-color: #dc3545;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .bem-vindo {
+            margin-bottom: 30px;
+        }
+
+        .bem-vindo h2 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .bem-vindo p {
+            color: #666;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .botao {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .botao:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Visitas</h1>
+
+        <a href="index.html" class="sair">Sair</a>
+    </header>
+
+    <main class="container">
+
+        <section class="bem-vindo">
+            <h2>Bem-vindo ao sistema!</h2>
+            <p>Gerencie as visitas domiciliares e as informações dos usuários.</p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Usuários</h3>
+                <p>Cadastre e consulte os usuários do sistema.</p>
+                <a href="cad_usuario.html" class="botao">Cadastrar</a>
+            </div>
+
+            <div class="card">
+                <h3>Visitas</h3>
+                <p>Registre e acompanhe as visitas domiciliares.</p>
+                <a href="cad_visita.html" class="botao">Acessar</a>
+            </div>
+
+            <div class="card">
+                <h3>Pacientes</h3>
+                <p>Consulte os dados dos pacientes cadastrados.</p>
+                <a href="pacientes.html" class="botao">Acessar</a>
+            </div>
+
+            <div class="card">
+                <h3>Relatórios</h3>
+                <p>Visualize informações e relatórios das visitas.</p>
+                <a href="relatorios.html" class="botao">Acessar</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sistema de Visitas Domiciliares &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
